@@ -103,13 +103,13 @@ const LandingPage = () => {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
           <p>© 2025 Ontario Health Maps. All rights reserved.</p>
           <nav className="space-x-6">
-            <Link to="/" className="hover:underline">
+            <Link to="/privacy-policy" className="hover:underline">
               Privacy Policy
             </Link>
-            <Link to="/" className="hover:underline">
+            <Link to="/terms-of-service" className="hover:underline">
               Terms of Service
             </Link>
-            <Link to="/" className="hover:underline">
+            <Link to="/contact" className="hover:underline">
               Contact
             </Link>
           </nav>
