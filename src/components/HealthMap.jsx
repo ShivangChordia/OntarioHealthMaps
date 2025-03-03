@@ -9,7 +9,7 @@ const HealthMap = () => {
   const [missingCount, setMissingCount] = useState(0);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/phu-data?disease`)
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/phu-data`)
       .then((response) => response.json())
       .then((data) => {
         console.log(`✅ Fetched PHU Data`);
