@@ -22,8 +22,10 @@ const Navbar = () => {
 
   return (
     <div className="bg-blue-700 text-white shadow-md">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-        <h1 className="text-2xl font-bold">Ontario Health Maps</h1>
+      <div className="flex items-center justify-between py-4 px-6">
+        <Link to="/home">
+          <h1 className="text-2xl font-bold">Ontario Health Maps</h1>
+        </Link>
 
         <nav className="space-x-6">
           {/* Show these links only if user is authenticated */}

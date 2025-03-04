@@ -4,10 +4,12 @@ import LandingPage from "./pages/LandingPage";
 import SignIn from "./pages/Signin";
 import RequestAccess from "./pages/RequestAccess";
 import Home from "./pages/Home";
-import PrivacyPolicy from "./pages/PrivacyPolicy"; 
-import TermsOfService from "./pages/TermsOfSerivce"; 
-import Contact from "./pages/ContactPage"; 
-import About from "./pages/About"; 
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
+import Contact from "./pages/ContactPage";
+import About from "./pages/About";
+
+
 
 function App() {
   return (

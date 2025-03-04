@@ -1,58 +1,83 @@
 import React from "react";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const About = () => {
   return (
-    <div className="max-w-5xl mx-auto p-10 bg-white shadow-lg rounded-lg mt-8 border border-gray-200">
-      <h1 className="text-5xl font-bold text-center text-gray-900 mb-8 border-b pb-4">About Ontario Health Maps</h1>
-      <p className="text-gray-600 text-lg text-center mb-10 leading-relaxed">
-        Empowering healthcare professionals, researchers, and policymakers with data-driven insights.
-      </p>
-
-      <div className="space-y-12 text-gray-800">
-        <section>
-          <h2 className="text-3xl font-semibold border-b-2 pb-3 mb-6">🌍 Our Mission</h2>
-          <p className="text-lg leading-relaxed">
-            Ontario Health Maps provides <strong>real-time health data visualization</strong> to support
-            research, policy-making, and healthcare planning. We believe in using <strong>open data</strong> to
-            improve healthcare accessibility, transparency, and efficiency.
-          </p>
+    <>
+      <Navbar />
+      <div className="bg-gray-100 min-h-screen">
+        {/* Hero Section */}
+        <section className="py-16 bg-blue-50">
+          <div className="max-w-7xl mx-auto px-6 text-center">
+            <h1 className="text-4xl font-extrabold text-blue-700 mb-6">
+              About Ontario Health Maps
+            </h1>
+            <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
+              Empowering healthcare professionals, researchers, and policymakers
+              with
+              <span className="font-semibold"> data-driven insights</span> to
+              improve healthcare accessibility and transparency.
+            </p>
+          </div>
         </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold border-b-2 pb-3 mb-6">🚀 Key Features</h2>
-          <ul className="list-none space-y-4">
-            <li className="flex items-center"><span className="mr-2">📍</span><strong>Interactive Health Map</strong> – Visualizing disease prevalence across Ontario.</li>
-            <li className="flex items-center"><span className="mr-2">📊</span><strong>Data-Driven Insights</strong> – Providing real-time analytics for research and policy support.</li>
-            <li className="flex items-center"><span className="mr-2">🛠️</span><strong>User-Friendly Platform</strong> – Accessible for researchers, healthcare professionals, and the public.</li>
-          </ul>
+        {/* Content Section */}
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div className="">
+              <h2 className="text-3xl font-bold text-blue-700">
+                Our Mission 🌍
+              </h2>
+              <p className="mt-4 text-lg text-gray-700 leading-relaxed">
+                Ontario Health Maps provides{" "}
+                <span className="font-semibold">
+                  real-time health data visualization
+                </span>
+                to support research, policy-making, and healthcare planning.
+              </p>
+              <p className="mt-4 text-lg text-gray-700">
+                We believe in using{" "}
+                <span className="font-semibold">open data</span>
+                to enhance healthcare accessibility, transparency, and
+                efficiency.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold border-b-2 pb-3 mb-6">📚 Our Data Sources</h2>
-          <ul className="list-none space-y-4">
-            <li className="flex items-center"><span className="mr-2">🩺</span><strong>Public Health Ontario</strong> – Providing provincial health data and disease trends.</li>
-            <li className="flex items-center"><span className="mr-2">📊</span><strong>Census Mapper</strong> – Demographic data for deeper insights into healthcare impact.</li>
-            <li className="flex items-center"><span className="mr-2">🔬</span><strong>Open-Source Research Data</strong> – Academic and publicly available datasets.</li>
-          </ul>
+        {/* Key Features */}
+        <section className="py-16 bg-blue-700 text-white text-center">
+          <h2 className="text-3xl font-bold">🚀 Key Features</h2>
+          <div className="max-w-5xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="p-6 bg-white text-gray-800 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold">
+                📍 Interactive Health Map
+              </h3>
+              <p className="mt-2 text-lg">
+                Visualizing disease prevalence across Ontario.
+              </p>
+            </div>
+            <div className="p-6 bg-white text-gray-800 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold">📊 Data-Driven Insights</h3>
+              <p className="mt-2 text-lg">
+                Providing real-time analytics for research and policy support.
+              </p>
+            </div>
+            <div className="p-6 bg-white text-gray-800 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold">
+                🛠 User-Friendly Platform
+              </h3>
+              <p className="mt-2 text-lg">
+                Designed for researchers, professionals, and the public.
+              </p>
+            </div>
+          </div>
         </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold border-b-2 pb-3 mb-6">💡 Who Can Benefit?</h2>
-          <ul className="list-none space-y-4">
-            <li className="flex items-center"><span className="mr-2">📚</span><strong>Researchers & Academics</strong> – Studying healthcare trends.</li>
-            <li className="flex items-center"><span className="mr-2">🏥</span><strong>Healthcare Professionals</strong> – Understanding patient demographics.</li>
-            <li className="flex items-center"><span className="mr-2">🏛️</span><strong>Policy Makers</strong> – Allocating healthcare resources effectively.</li>
-            <li className="flex items-center"><span className="mr-2">👥</span><strong>The General Public</strong> – Staying informed about local health data.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 className="text-3xl font-semibold border-b-2 pb-3 mb-6">📞 Contact Us</h2>
-          <p className="text-lg">Have questions or want to collaborate? Reach out to us!</p>
-          <p className="mt-2">📧 Email: <a href="mailto:support@ontariohealthmaps.com" className="text-blue-600 hover:underline">support@ontariohealthmaps.com</a></p>
-        </section>
+        <Footer />
       </div>
-    </div>
+    </>
   );
 };
 
